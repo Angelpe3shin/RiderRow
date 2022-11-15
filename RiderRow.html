@@ -2,10 +2,11 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href= 'icon.css'>
+    <link rel="stylesheet" href='icon.css'>
 </head>
+
 <body>
-    <div class="header">
+    <div>
         <div class="images">
         </div>
         <div class="header">
@@ -16,90 +17,124 @@
         <div class="center-block">
             <div class="menu">
                 <div class="menu-fly">
-                    <div class="link-container">
-                        <a href="https://www.youtube.com/user/jonmelemetro" class="myButton icon youtube"
-                            target="_blank">
-                            
-                            YouTube channel
-                        </a>
-                    </div>
+                </div>
+                <div class="link-container">
+                    <a href="https://www.youtube.com/user/jonmelemetro" class="myButton icon youtube" target="_blank">
 
-                    <div class="link-container">
-                        <a href="https://www.youtube.com/user/jonmelemetro/videos" class="myButton icon home"
-                            target="_blank">
-                            Ссылка на видео
-                        </a>
-                    </div>
+                        YouTube channel
+                    </a>
+                </div>
 
+                <div class="link-container">
+                    <a href="https://www.youtube.com/user/jonmelemetro/videos" class="myButton icon home"
+                        target="_blank">
+                        Ссылка на видео
+                    </a>
+                </div>
+
+                <div class="link-container">
+                    <a href="#gallery" class="myButton icon home">
+                        gallery
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="#form" class="myButton icon home">
+                        form
+                    </a>
                 </div>
             </div>
             <div class="content">
 
-
-                <div class="bike-container">
-                    <div class="name"> BMW 800</div>
-                    <div class="image-and-desc">
-                        <div class="image-container">
-                            <img src="картинки/Картинка 1.jpg" alt="bmw800">
+                <div class="page gallery" id="gallery">
+                    <div class="bike-container">
+                        <div class="name"> BMW 800</div>
+                        <div class="image-and-desc">
+                            <div class="image-container">
+                                <img src="картинки/Картинка 1.jpg" alt="bmw800">
+                            </div>
+                            <div class="desc">
+                                bike
+                            </div>
                         </div>
-                        <div class="desc">
-                            bike
+                        <div class="additional-container">
+                            <div class="action">скорость</div>
+                            <div class="action">красота</div>
+                            <div class="action">элегантность</div>
                         </div>
                     </div>
-                    <div class="additional-container">
-                        <div class="action">скорость</div>
-                        <div class="action">красота</div>
-                        <div class="action">элегантность</div>
+    
+                    <div class="bike-container">
+                        <div class="name">BMW 800</div>
+                        <div class="image-and-desc">
+                            <div class="image-container">
+                                <img src="картинки/Картинка 2.jpg" alt="bmw800">
+                            </div>
+                            <div class="desc">
+                                bike
+                            </div>
+                        </div>
+                        <div class="additional-container">
+                            <div class="action">Параметры</div>
+                            <div class="action">Инструкция</div>
+                            <div class="action">Отзывы</div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="bike-container">
-                    <div class="name">BMW 800</div>
-                    <div class="image-and-desc">
-                        <div class="image-container">
-                            <img src="картинки/Картинка 2.jpg" alt="bmw800">
+    
+                <div class="page form" id="form">
+                    <form>
+                        <div required>
+                            <label>
+                                Ваши ФИО
+                                <input type="text" placeholder="введите свои данные">
+                            </label>
                         </div>
-                        <div class="desc">
-                            bike
+                        <div>
+                            <input type="number" min="18" class="inputtype" placeholder="Ваш возраст">
                         </div>
-                    </div>
-                    <div class="additional-container">
-                        <div class="action">Параметры</div>
-                        <div class="action">Инструкция</div>
-                        <div class="action">Отзывы</div>
-                    </div>
+                        <div>
+                            <label><input type="radio" name="sex"> Мужской</label>
+                            <label><input type="radio" name="sex" checked="checked"> Женский</label>
+                        </div>
+                        <div>
+                            <div>
+                                У вас уже есть мотоцикл?
+                            </div>
+                            <label><input type="checkbox" name="bike"> Да,есть </label>
+                            <label><input type="checkbox" name="bike"> Мечтаю приобрести</label>
+                        </div>
+                        <div>
+                            Какой цвет мотоциклов предпочитаете?<input type="color" name="color ">
+                        </div>
+                        <div>Предпочтительный вес мотоцикла?
+                            <div>
+                                <input id="radio_1" name="guruweba_example_radio" type="radio" value="1" />
+                                <label for="radio_1">До 200 кг</label><br />
+                                <input id="radio_2" name="guruweba_example_radio" type="radio" value="2" />
+                                <label for="radio_2">Более 200 кг</label><br />
+                            </div>
+                        </div>
+                        <div class="inputtext" required>Укажите Вашу страну:
+                            <select class="inputtype">
+                                <option>Украина</option>
+                                <option>Литва</option>
+                                <option>Латвия</option>
+                                <option>Польша</option>
+                                <option>Россия</option>
+                                <option selected="selected">Беларусь</option>
+                            </select>
+    
+    
+                        </div>
+                        <div>
+                            <input type="submit" value="Отправить" />
+                        </div>
+                    </form>
                 </div>
-
-
-
-
-
-
+            </div>
+        </div>
+       
+    </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>

@@ -2,10 +2,10 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
+    
 }
 
 .logo{
-    position: absolute;
     left: 1000px;
     width: 90px;
     top: 17px;
@@ -40,7 +40,6 @@
 }
 
 .content {
-    display: flex;
     flex-wrap: wrap;
     flex: 1;
 }
@@ -135,4 +134,23 @@
 
 .main {
     font-size: 30px;
+}
+
+.inputtext{
+    color: rgb(255, 0, 0);
+}
+.inputtype{
+    color: rgb(177, 4, 245);
+    border-color:rgb(131, 3, 170) ;
+}
+
+.page{
+    display: none;
+}
+
+.page:target{
+    display: flex;
+}
+.gallery{
+    position:absolute ;
 }
