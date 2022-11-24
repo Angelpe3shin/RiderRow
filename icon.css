@@ -12,8 +12,15 @@
 .youtube:hover::before {
     background-image: url(иконки/after\ YOUTUBE.png);
 }
-.home::before {
-    background-image: url(иконки/home\ before.png);
+.picture::before{
+    background-image: url(иконки/пейзаж\ ДО.png);
 }
-.home:hover::before {
-    background-image: url(иконки/home\ after.png);
+.picture:hover::before{
+    background-image: url(иконки/пейзаж\ ПОСЛЕ.png);
+}
+.people::before{
+    background-image:url(иконки/люди\ ДОООО.png)
+}
+.people:hover::before{
+    background-image: url(иконки/люди\ после.png);
+}

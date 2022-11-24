@@ -143,14 +143,39 @@
     color: rgb(177, 4, 245);
     border-color:rgb(131, 3, 170) ;
 }
-
+.dopmenu{
+    display: none;
+}
+.dopmenu:target{
+    display: flex;
+}
 .page{
     display: none;
+    
 }
 
 .page:target{
     display: flex;
 }
-.gallery{
-    position:absolute ;
+.motorcycl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.interview{
+    flex-wrap: wrap;
+}
+.motorcyclist{
+    display: none;
+}
+.motorcyclist:target{
+    display: flex;
+}
+
+.menu-group .dopmenu{
+    display: none;
+    position:fixed
+}
+    
+.menu-group:hover .dopmenu{
+    display: block;    
 }
