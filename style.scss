@@ -46,14 +46,12 @@
 }
 
 .bike-container {
-    border: 1px red solid;
+    border: 3px rgb(193, 32, 196) solid;
     border-radius: 15px;
     width: 500px;
     height: 300px;
-
     display: flex;
     flex-direction: column;
-
     margin: 5px;
 }
 
@@ -63,10 +61,12 @@
     display: flex;
     justify-content: center;
     padding: 5px;
+&:hover{
+    background-color: rgb(210, 138, 255);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
-
-.bike-container .name:hover {
-    background-color: aqua;
+    
 }
 
 .image-and-desc {
@@ -77,7 +77,11 @@
 .image-container {
     display: flex;
     align-items: center;
-    border-right: 1px red solid;
+   
+    &:hover{
+        transform: scale(1.5);
+    }
+    
 }
 
 .image-container img {
@@ -87,12 +91,12 @@
 
 .additional-container {
     display: flex;
-    border-top: 1px red solid;
+    border-top: 1px rgb(210, 138, 255);
 }
 
 .additional-container .action {
     flex: 1;
-    background-color: pink;
+    background-color: rgb(161, 3, 219);
     margin: 1px;
     display: flex;
     justify-content: center;
@@ -100,12 +104,12 @@
 
 .additional-container .action:first-child {
     border-bottom-left-radius: 15px;
-    background-color: aqua;
+    background-color: rgb(168, 52, 170);
 }
 
 .additional-container .action:last-child {
     border-bottom-right-radius: 15px;
-    background-color: aqua;
+    background-color: rgb(168, 52, 170);
 }
 
 .desc {
@@ -114,6 +118,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
+    border-left:1px red solid;;
 }
 
 .footer {
@@ -172,6 +177,8 @@
 
 .dopmenu {
     display: none;
+    font-size: 15px;
+    margin-left: 150px;
 }
 
 .dopmenu:target {
@@ -181,14 +188,61 @@
 .menu-group {
     .dopmenu {
         display: none;
-
         position: fixed;
-
-        
     }
     &:hover {
         .dopmenu {
             display: block;
         }
     }
+}
+
+.newmotorcyclist{
+    border: 2px rgb(180, 34, 165) solid;
+    border-radius: 15px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
+        .textmoto{
+            overflow: scroll;
+            padding: 5px;
+            height: 350px;
+            border-left: 2px rgb(180, 34, 165) solid;
+        }
+}
+.videochannel:target{
+    display:flex
+}
+.namemoto {
+    border-bottom: 3px gray;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+&:hover{
+    background-color: rgb(209, 29, 237);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    
+}  
+}
+.containerrmanual{
+    border: 2px rgb(180, 34, 165) solid;
+    border-radius: 8px;
+    width: 600px;
+    display: flex;
+    
+    .textmanual{
+        overflow: scroll;
+        padding: 5px;
+        height: 350px;
+        border-left: 2px rgb(180, 34, 165) solid;
+    }
+}
+.bikebike{
+    display: flex;
 }
