@@ -7,7 +7,7 @@
 }
 
 .youtube::before {
-    background-image: url(иконки/before\ YOUTUBE\ \(1\).png);
+    background-image: url(иконки/before\ YOUTUBE.png);
 }
 .youtube:hover::before {
     background-image: url(иконки/after\ YOUTUBE.png);
