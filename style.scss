@@ -52,7 +52,7 @@
     width: 500px;
     height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 5px;
 }
 
@@ -104,12 +104,12 @@
 }
 
 .additional-container .action:first-child {
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     background-color: rgb(168, 52, 170);
 }
 
 .additional-container .action:last-child {
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     background-color: rgb(168, 52, 170);
 }
 
@@ -244,7 +244,4 @@
         height: 350px;
         border-left: 2px rgb(180, 34, 165) solid;
     }
-}
-.bikebike{
-    display: flex;
 }
